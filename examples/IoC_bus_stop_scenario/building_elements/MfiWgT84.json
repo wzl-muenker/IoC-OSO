@@ -1,0 +1,172 @@
+{
+    "id": "MfiWgT84",
+    "name": "Steel Beam 1",
+    "parameters": [
+        {
+            "capabilityType": null,
+            "dimensionUnit": "t",
+            "id": "Par_weight",
+            "name": "Gewicht",
+            "py/object": "src.IoC_OSO.class_models.Weight",
+            "state": "IDLE",
+            "type": "Integer",
+            "value": 6.435,
+            "value_range": null
+        },
+        {
+            "capabilityType": null,
+            "dimensionUnit": "m^3",
+            "id": "Par_volume",
+            "name": "Volumen",
+            "py/object": "src.IoC_OSO.class_models.Volume",
+            "state": "IDLE",
+            "type": "Integer",
+            "value": 0.825,
+            "value_range": null
+        },
+        {
+            "capabilityType": null,
+            "dimensionUnit": "t",
+            "id": "Par_volume_performance",
+            "name": "Verfahrvolumen",
+            "py/object": "src.IoC_OSO.class_models.PerfVolume",
+            "state": "IDLE",
+            "type": "Integer",
+            "value": 0.825
+        }
+    ],
+    "predecessors": [],
+    "py/object": "src.IoC_OSO.class_models.BuildingElementAAS",
+    "reference_process": {
+        "activities": [
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "MfiWgT84/RP_IFC_SLAB/Transportation/TransportCapability",
+                        "name": "transport capability",
+                        "parameters": {
+                            "py/id": 3
+                        },
+                        "py/object": "src.IoC_OSO.class_models.TransportCapability"
+                    }
+                ],
+                "id": "MfiWgT84/RP_IFC_SLAB/Transportation",
+                "name": "Transportation Activity",
+                "py/object": "src.IoC_OSO.class_models.TransportationActivity",
+                "state": "IDLE",
+                "transport_location": [],
+                "type": "TRANSPORTATION"
+            },
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "MfiWgT84/RP_IFC_SLAB/Positioning/PositioningCapability",
+                        "name": "Positioning capability",
+                        "parameters": {
+                            "py/id": 3
+                        },
+                        "py/object": "src.IoC_OSO.class_models.PositioningCapability"
+                    }
+                ],
+                "id": "MfiWgT84/RP_IFC_SLAB/Positioning",
+                "name": "Positioning Activity",
+                "py/object": "src.IoC_OSO.class_models.PositioningActivity",
+                "state": "IDLE",
+                "type": "POSITIONING"
+            },
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "MfiWgT84/RP_IFC_SLAB/AC_Adjust/AdjustCapability",
+                        "name": "adjust capability",
+                        "parameters": [
+                            {
+                                "py/id": 6
+                            }
+                        ],
+                        "py/object": "src.IoC_OSO.class_models.AdjustCapability"
+                    }
+                ],
+                "id": "MfiWgT84/RP_IFC_SLAB/AC_Adjust",
+                "name": "Adjust Activity",
+                "py/object": "src.IoC_OSO.class_models.AdjustActivity",
+                "state": "IDLE",
+                "type": "ADJUST"
+            },
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "MfiWgT84/RP_IFC_SLAB/Fix/FixCapability",
+                        "name": "fix capability",
+                        "parameters": [
+                            {
+                                "py/id": 6
+                            }
+                        ],
+                        "py/object": "src.IoC_OSO.class_models.FixCapability"
+                    }
+                ],
+                "id": "MfiWgT84/RP_IFC_SLAB/Fix",
+                "name": "Fix Activity",
+                "py/object": "src.IoC_OSO.class_models.FixActivity",
+                "state": "IDLE",
+                "type": "FIX"
+            },
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "MfiWgT84/RP_IFC_SLAB/EndAssemblyActivity/FixCapability",
+                        "name": "fix capability",
+                        "parameters": [
+                            {
+                                "py/id": 6
+                            }
+                        ],
+                        "py/object": "src.IoC_OSO.class_models.FixCapability"
+                    }
+                ],
+                "id": "MfiWgT84/RP_IFC_SLAB/EndAssemblyActivity",
+                "name": "End Assembly Activity",
+                "py/object": "src.IoC_OSO.class_models.EndAssemblyActivity",
+                "state": "IDLE",
+                "type": "ENDASSEMBLY"
+            }
+        ],
+        "building_element": {
+            "py/id": 0
+        },
+        "id": "MfiWgT84/RP_IFC_SLAB",
+        "name": "Reference process for ifcSlab",
+        "py/object": "src.IoC_OSO.class_models.IfcBeamProcess",
+        "state": "IDLE",
+        "type": "IFC_SLAB"
+    },
+    "state": "IDLE",
+    "type": "ifcBeam",
+    "variables": []
+}

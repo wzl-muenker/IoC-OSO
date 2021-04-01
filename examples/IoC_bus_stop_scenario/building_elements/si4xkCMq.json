@@ -1,0 +1,177 @@
+{
+    "id": "si4xkCMq",
+    "name": "Steel Column 2",
+    "parameters": [
+        {
+            "capabilityType": null,
+            "dimensionUnit": "t",
+            "id": "Par_weight",
+            "name": "Gewicht",
+            "py/object": "src.IoC_OSO.class_models.Weight",
+            "state": "IDLE",
+            "type": "Integer",
+            "value": 4.1,
+            "value_range": null
+        },
+        {
+            "capabilityType": null,
+            "dimensionUnit": "m^3",
+            "id": "Par_volume",
+            "name": "Volumen",
+            "py/object": "src.IoC_OSO.class_models.Volume",
+            "state": "IDLE",
+            "type": "Integer",
+            "value": 0.525,
+            "value_range": null
+        },
+        {
+            "capabilityType": null,
+            "dimensionUnit": "t",
+            "id": "Par_volume_performance",
+            "name": "Verfahrvolumen",
+            "py/object": "src.IoC_OSO.class_models.PerfVolume",
+            "state": "IDLE",
+            "type": "Integer",
+            "value": 0.525
+        }
+    ],
+    "predecessors": [],
+    "py/object": "src.IoC_OSO.class_models.BuildingElementAAS",
+    "reference_process": {
+        "activities": [
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "si4xkCMq/RP_IFC_COLUMN/Transportation/TransportCapability",
+                        "name": "transport capability",
+                        "parameters": {
+                            "py/id": 3
+                        },
+                        "py/object": "src.IoC_OSO.class_models.TransportCapability"
+                    }
+                ],
+                "id": "si4xkCMq/RP_IFC_COLUMN/Transportation",
+                "name": "Transportation Activity",
+                "py/object": "src.IoC_OSO.class_models.TransportationActivity",
+                "state": "IDLE",
+                "transport_location": [],
+                "type": "TRANSPORTATION"
+            },
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "si4xkCMq/RP_IFC_COLUMN/Form/PositioningCapability",
+                        "name": "Positioning capability",
+                        "parameters": {
+                            "py/id": 3
+                        },
+                        "py/object": "src.IoC_OSO.class_models.PositioningCapability"
+                    },
+                    {
+                        "description": "Default.",
+                        "id": "si4xkCMq/RP_IFC_COLUMN/Form/AssemblyCapability",
+                        "name": "Assembly capability",
+                        "parameters": [
+                            {
+                                "py/id": 6
+                            }
+                        ],
+                        "py/object": "src.IoC_OSO.class_models.AssemblyCapability"
+                    }
+                ],
+                "id": "si4xkCMq/RP_IFC_COLUMN/Form",
+                "name": "Form Activity",
+                "py/object": "src.IoC_OSO.class_models.FormActivity",
+                "state": "IDLE",
+                "type": "FORM"
+            },
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "si4xkCMq/RP_IFC_COLUMN/Reinforce/PositioningCapability",
+                        "name": "Positioning capability",
+                        "parameters": {
+                            "py/id": 3
+                        },
+                        "py/object": "src.IoC_OSO.class_models.PositioningCapability"
+                    },
+                    {
+                        "description": "Default.",
+                        "id": "si4xkCMq/RP_IFC_COLUMN/Reinforce/AssemblyCapability",
+                        "name": "Assembly capability",
+                        "parameters": [
+                            {
+                                "py/id": 6
+                            }
+                        ],
+                        "py/object": "src.IoC_OSO.class_models.AssemblyCapability"
+                    }
+                ],
+                "id": "si4xkCMq/RP_IFC_COLUMN/Reinforce",
+                "name": "Reinforce Activity",
+                "py/object": "src.IoC_OSO.class_models.ReinforceActivity",
+                "state": "IDLE",
+                "type": "REINFORCE"
+            },
+            {
+                "allocatedResources": [],
+                "building_element": {
+                    "py/id": 0
+                },
+                "capabilities": [
+                    {
+                        "description": "Default.",
+                        "id": "si4xkCMq/RP_IFC_COLUMN/Concrete/PositioningCapability",
+                        "name": "Positioning capability",
+                        "parameters": {
+                            "py/id": 3
+                        },
+                        "py/object": "src.IoC_OSO.class_models.PositioningCapability"
+                    },
+                    {
+                        "description": "Default.",
+                        "id": "si4xkCMq/RP_IFC_COLUMN/Concrete/ShakingCapability",
+                        "name": "Shaking capability",
+                        "parameters": [
+                            {
+                                "py/id": 6
+                            }
+                        ],
+                        "py/object": "src.IoC_OSO.class_models.ShakingCapability"
+                    }
+                ],
+                "id": "si4xkCMq/RP_IFC_COLUMN/Concrete",
+                "name": "Concrete Activity",
+                "py/object": "src.IoC_OSO.class_models.ConcreteActivity",
+                "state": "IDLE",
+                "type": "CONCRETE"
+            }
+        ],
+        "building_element": {
+            "py/id": 0
+        },
+        "id": "si4xkCMq/RP_IFC_COLUMN",
+        "name": "Reference process for ifcColumn",
+        "py/object": "src.IoC_OSO.class_models.IfcColumnProcess",
+        "state": "IDLE",
+        "type": "IFC_COLUMN"
+    },
+    "state": "IDLE",
+    "type": "ifcColumn",
+    "variables": []
+}

@@ -1,0 +1,91 @@
+{
+    "id": "R_Truck_002",
+    "name": "MAN 20t",
+    "py/object": "src.IoC_OSO.class_models.TransportResourceAAS",
+    "setups": [
+        {
+            "building_element": "H\u00e4nger",
+            "capabilities": [
+                {
+                    "description": "Transport leichter G\u00fcter",
+                    "id": "c002/TransportCapability",
+                    "name": "Transport002",
+                    "parameters": [
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "t",
+                            "id": "Par_weight",
+                            "name": "Traglast",
+                            "py/object": "src.IoC_OSO.class_models.Weight",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": null,
+                            "value_range": [
+                                0,
+                                15
+                            ]
+                        },
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "km/h",
+                            "id": "Velocity_performance",
+                            "name": "Verfahrgeschwindigkeit",
+                            "py/object": "src.IoC_OSO.class_models.Velocity",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": 3
+                        },
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "t/h",
+                            "id": "Par_volume_performance",
+                            "name": "Verfahrvolumen",
+                            "py/object": "src.IoC_OSO.class_models.PerfVolume",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": 3
+                        },
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "m",
+                            "id": "Par_height",
+                            "name": "Verfahrh\u00f6he",
+                            "py/object": "src.IoC_OSO.class_models.Height",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": null,
+                            "value_range": [
+                                0,
+                                15
+                            ]
+                        },
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "m^3",
+                            "id": "Par_volume",
+                            "name": "Tragvolumen",
+                            "py/object": "src.IoC_OSO.class_models.Volume",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": null,
+                            "value_range": [
+                                0,
+                                10
+                            ]
+                        }
+                    ],
+                    "py/object": "src.IoC_OSO.class_models.TransportCapability"
+                }
+            ],
+            "id": {
+                "py/id": 2
+            },
+            "name": "s002",
+            "py/object": "src.IoC_OSO.class_models.Setup",
+            "state": "IDLE",
+            "type": "Transport"
+        }
+    ],
+    "state": "IDLE",
+    "type": "LKW"
+}
