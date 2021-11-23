@@ -339,11 +339,11 @@ projectList = [
                             name="Positionieren",
                             description="Poitionieren schwerer Güter",
                             parameters=[
-                                Weight(dimensionName="Traglast", dimensionUnit="t", valueRange=[0, 70]),
+                                Weight(dimensionName="Traglast", dimensionUnit="t", valueRange=[0, 1]),
                                 PerfVolume(dimensionName="Verfahrvolumen", dimensionUnit="t/h", value=2),
                                 Velocity(dimensionName="Verfahrgeschwindigkeit", dimensionUnit="km/h", value=2),
-                                Height(dimensionName="Verfahrhöhe", dimensionUnit="m", valueRange=[0, 15]),
-                                Volume(dimensionName="Tragvolumen", dimensionUnit="m^3", valueRange=[0, 30])
+                                Height(dimensionName="Verfahrhöhe", dimensionUnit="m", valueRange=[0, 4]),
+                                Volume(dimensionName="Tragvolumen", dimensionUnit="m^3", valueRange=[0, 1])
                                 ]
                             )
                         ]
