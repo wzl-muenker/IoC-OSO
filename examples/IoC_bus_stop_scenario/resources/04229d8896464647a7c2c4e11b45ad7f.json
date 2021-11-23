@@ -1,15 +1,15 @@
 {
-    "id": "R_Truck_002",
-    "name": "MAN 20t",
+    "id": "04229d8896464647a7c2c4e11b45ad7f",
+    "name": "KR 120 R3900",
     "py/object": "src.IoC_OSO.class_models.TransportResourceAAS",
     "setups": [
         {
-            "building_element": "H\u00e4nger",
+            "building_element": "Schwerlasthaken",
             "capabilities": [
                 {
-                    "description": "Transport leichter G\u00fcter",
-                    "id": "c002/TransportCapability",
-                    "name": "Transport002",
+                    "description": "Poitionieren schwerer G\u00fcter",
+                    "id": "c002/PositioningCapability",
+                    "name": "Positionieren",
                     "parameters": [
                         {
                             "capabilityType": null,
@@ -22,18 +22,8 @@
                             "value": null,
                             "value_range": [
                                 0,
-                                15
+                                70
                             ]
-                        },
-                        {
-                            "capabilityType": null,
-                            "dimensionUnit": "km/h",
-                            "id": "Velocity_performance",
-                            "name": "Verfahrgeschwindigkeit",
-                            "py/object": "src.IoC_OSO.class_models.Velocity",
-                            "state": "IDLE",
-                            "type": "Integer",
-                            "value": 3
                         },
                         {
                             "capabilityType": null,
@@ -43,7 +33,17 @@
                             "py/object": "src.IoC_OSO.class_models.PerfVolume",
                             "state": "IDLE",
                             "type": "Integer",
-                            "value": 3
+                            "value": 2
+                        },
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "km/h",
+                            "id": "Velocity_performance",
+                            "name": "Verfahrgeschwindigkeit",
+                            "py/object": "src.IoC_OSO.class_models.Velocity",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": 2
                         },
                         {
                             "capabilityType": null,
@@ -70,22 +70,22 @@
                             "value": null,
                             "value_range": [
                                 0,
-                                10
+                                30
                             ]
                         }
                     ],
-                    "py/object": "src.IoC_OSO.class_models.TransportCapability"
+                    "py/object": "src.IoC_OSO.class_models.PositioningCapability"
                 }
             ],
             "id": {
                 "py/id": 2
             },
-            "name": "s002",
+            "name": "s001",
             "py/object": "src.IoC_OSO.class_models.Setup",
             "state": "IDLE",
             "type": "Transport"
         }
     ],
     "state": "IDLE",
-    "type": "LKW"
+    "type": "Kran"
 }

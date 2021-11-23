@@ -1,29 +1,11 @@
 {
-    "id": "R_Worker_003",
-    "name": "Hans Dieter",
+    "id": "dce9b3c20e6549e4a826c2a43da9ff9e",
+    "name": "Hans Wurst",
     "py/object": "src.IoC_OSO.class_models.WorkerResourceAAS",
     "setups": [
         {
-            "building_element": "Schrauben",
+            "building_element": "Schrauben Anziehen",
             "capabilities": [
-                {
-                    "description": "Justieren Beschreibung",
-                    "id": "c003/AdjustCapability",
-                    "name": "JustierenName",
-                    "parameters": [
-                        {
-                            "capabilityType": null,
-                            "dimensionUnit": "t/h",
-                            "id": "Par_volume_performance",
-                            "name": "Justagegeschwindigkeit",
-                            "py/object": "src.IoC_OSO.class_models.PerfVolume",
-                            "state": "IDLE",
-                            "type": "Integer",
-                            "value": 0.5
-                        }
-                    ],
-                    "py/object": "src.IoC_OSO.class_models.AdjustCapability"
-                },
                 {
                     "description": "Fixieren Beschreibung",
                     "id": "c004/FixCapability",
@@ -46,7 +28,7 @@
             "id": {
                 "py/id": 2
             },
-            "name": "s003",
+            "name": "s005",
             "py/object": "src.IoC_OSO.class_models.Setup",
             "state": "IDLE",
             "type": "Qualification"

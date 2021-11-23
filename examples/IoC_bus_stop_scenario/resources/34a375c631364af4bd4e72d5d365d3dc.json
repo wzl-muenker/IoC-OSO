@@ -1,5 +1,5 @@
 {
-    "id": "R_Truck_003",
+    "id": "34a375c631364af4bd4e72d5d365d3dc",
     "name": "MAN 20t",
     "py/object": "src.IoC_OSO.class_models.TransportResourceAAS",
     "setups": [
@@ -8,8 +8,8 @@
             "capabilities": [
                 {
                     "description": "Transport leichter G\u00fcter",
-                    "id": "c003/TransportCapability",
-                    "name": "Transport004",
+                    "id": "c002/TransportCapability",
+                    "name": "Transport002",
                     "parameters": [
                         {
                             "capabilityType": null,
@@ -22,7 +22,7 @@
                             "value": null,
                             "value_range": [
                                 0,
-                                7
+                                15
                             ]
                         },
                         {
@@ -33,7 +33,7 @@
                             "py/object": "src.IoC_OSO.class_models.Velocity",
                             "state": "IDLE",
                             "type": "Integer",
-                            "value": 0.5
+                            "value": 3
                         },
                         {
                             "capabilityType": null,
@@ -80,7 +80,7 @@
             "id": {
                 "py/id": 2
             },
-            "name": "s003",
+            "name": "s002",
             "py/object": "src.IoC_OSO.class_models.Setup",
             "state": "IDLE",
             "type": "Transport"

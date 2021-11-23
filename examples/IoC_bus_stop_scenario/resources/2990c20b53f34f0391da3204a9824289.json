@@ -1,32 +1,14 @@
 {
-    "id": "R_Worker_004",
-    "name": "Hans Uwe",
+    "id": "2990c20b53f34f0391da3204a9824289",
+    "name": "Hans Wurst",
     "py/object": "src.IoC_OSO.class_models.WorkerResourceAAS",
     "setups": [
         {
-            "building_element": "Schrauben",
+            "building_element": "Schrauben Anziehen",
             "capabilities": [
                 {
-                    "description": "Justieren Beschreibung",
-                    "id": "c003/AdjustCapability",
-                    "name": "JustierenName",
-                    "parameters": [
-                        {
-                            "capabilityType": null,
-                            "dimensionUnit": "t/h",
-                            "id": "Par_volume_performance",
-                            "name": "Justagegeschwindigkeit",
-                            "py/object": "src.IoC_OSO.class_models.PerfVolume",
-                            "state": "IDLE",
-                            "type": "Integer",
-                            "value": 1
-                        }
-                    ],
-                    "py/object": "src.IoC_OSO.class_models.AdjustCapability"
-                },
-                {
                     "description": "Fixieren Beschreibung",
-                    "id": "c004/AssemblyCapability",
+                    "id": "c004/FixCapability",
                     "name": "FixierenName",
                     "parameters": [
                         {
@@ -37,16 +19,34 @@
                             "py/object": "src.IoC_OSO.class_models.PerfVolume",
                             "state": "IDLE",
                             "type": "Integer",
-                            "value": 0.5
+                            "value": 1
                         }
                     ],
-                    "py/object": "src.IoC_OSO.class_models.AssemblyCapability"
+                    "py/object": "src.IoC_OSO.class_models.FixCapability"
+                },
+                {
+                    "description": "Fixieren Beschreibung",
+                    "id": "c004/ShakingCapability",
+                    "name": "FixierenName",
+                    "parameters": [
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "t/h",
+                            "id": "Par_volume_performance",
+                            "name": "Fixiergeschwindigkeit",
+                            "py/object": "src.IoC_OSO.class_models.PerfVolume",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": 1
+                        }
+                    ],
+                    "py/object": "src.IoC_OSO.class_models.ShakingCapability"
                 }
             ],
             "id": {
                 "py/id": 2
             },
-            "name": "s004",
+            "name": "s006",
             "py/object": "src.IoC_OSO.class_models.Setup",
             "state": "IDLE",
             "type": "Qualification"

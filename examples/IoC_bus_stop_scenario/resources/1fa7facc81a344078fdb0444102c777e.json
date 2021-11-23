@@ -1,0 +1,57 @@
+{
+    "id": "1fa7facc81a344078fdb0444102c777e",
+    "name": "Hans Dieter",
+    "py/object": "src.IoC_OSO.class_models.WorkerResourceAAS",
+    "setups": [
+        {
+            "building_element": "Schrauben",
+            "capabilities": [
+                {
+                    "description": "Justieren Beschreibung",
+                    "id": "c003/AdjustCapability",
+                    "name": "JustierenName",
+                    "parameters": [
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "t/h",
+                            "id": "Par_volume_performance",
+                            "name": "Justagegeschwindigkeit",
+                            "py/object": "src.IoC_OSO.class_models.PerfVolume",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": 0.5
+                        }
+                    ],
+                    "py/object": "src.IoC_OSO.class_models.AdjustCapability"
+                },
+                {
+                    "description": "Fixieren Beschreibung",
+                    "id": "c004/FixCapability",
+                    "name": "FixierenName",
+                    "parameters": [
+                        {
+                            "capabilityType": null,
+                            "dimensionUnit": "t/h",
+                            "id": "Par_volume_performance",
+                            "name": "Fixiergeschwindigkeit",
+                            "py/object": "src.IoC_OSO.class_models.PerfVolume",
+                            "state": "IDLE",
+                            "type": "Integer",
+                            "value": 0.5
+                        }
+                    ],
+                    "py/object": "src.IoC_OSO.class_models.FixCapability"
+                }
+            ],
+            "id": {
+                "py/id": 2
+            },
+            "name": "s003",
+            "py/object": "src.IoC_OSO.class_models.Setup",
+            "state": "IDLE",
+            "type": "Qualification"
+        }
+    ],
+    "state": "IDLE",
+    "type": "Worker"
+}

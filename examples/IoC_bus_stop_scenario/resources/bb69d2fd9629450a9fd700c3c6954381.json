@@ -1,5 +1,5 @@
 {
-    "id": "R_Crane_001",
+    "id": "bb69d2fd9629450a9fd700c3c6954381",
     "name": "Kran Liebherr 01",
     "py/object": "src.IoC_OSO.class_models.TransportResourceAAS",
     "setups": [

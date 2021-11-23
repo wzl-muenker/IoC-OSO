@@ -60,5 +60,6 @@ def deserialize_all_resources(dir_path):
 
     return resource_list
 
+#serialize_all_resources()
 #building_element_list = deserialize_all_building_elements()
 #print('done')

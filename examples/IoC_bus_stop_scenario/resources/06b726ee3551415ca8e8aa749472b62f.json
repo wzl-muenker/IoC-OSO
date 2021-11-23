@@ -1,32 +1,32 @@
 {
-    "id": "R_Worker_006",
-    "name": "Hans Wurst",
+    "id": "06b726ee3551415ca8e8aa749472b62f",
+    "name": "Hans Uwe",
     "py/object": "src.IoC_OSO.class_models.WorkerResourceAAS",
     "setups": [
         {
-            "building_element": "Schrauben Anziehen",
+            "building_element": "Schrauben",
             "capabilities": [
                 {
-                    "description": "Fixieren Beschreibung",
-                    "id": "c004/FixCapability",
-                    "name": "FixierenName",
+                    "description": "Justieren Beschreibung",
+                    "id": "c003/AdjustCapability",
+                    "name": "JustierenName",
                     "parameters": [
                         {
                             "capabilityType": null,
                             "dimensionUnit": "t/h",
                             "id": "Par_volume_performance",
-                            "name": "Fixiergeschwindigkeit",
+                            "name": "Justagegeschwindigkeit",
                             "py/object": "src.IoC_OSO.class_models.PerfVolume",
                             "state": "IDLE",
                             "type": "Integer",
                             "value": 1
                         }
                     ],
-                    "py/object": "src.IoC_OSO.class_models.FixCapability"
+                    "py/object": "src.IoC_OSO.class_models.AdjustCapability"
                 },
                 {
                     "description": "Fixieren Beschreibung",
-                    "id": "c004/ShakingCapability",
+                    "id": "c004/AssemblyCapability",
                     "name": "FixierenName",
                     "parameters": [
                         {
@@ -37,16 +37,16 @@
                             "py/object": "src.IoC_OSO.class_models.PerfVolume",
                             "state": "IDLE",
                             "type": "Integer",
-                            "value": 1
+                            "value": 0.5
                         }
                     ],
-                    "py/object": "src.IoC_OSO.class_models.ShakingCapability"
+                    "py/object": "src.IoC_OSO.class_models.AssemblyCapability"
                 }
             ],
             "id": {
                 "py/id": 2
             },
-            "name": "s006",
+            "name": "s004",
             "py/object": "src.IoC_OSO.class_models.Setup",
             "state": "IDLE",
             "type": "Qualification"

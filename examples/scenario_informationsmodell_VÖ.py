@@ -270,7 +270,7 @@ projectList = [
             TransportResourceAAS(
             id="bb69d2fd9629450a9fd700c3c6954381",
             type="Kran",
-            name="Kran Liebherr 01",
+            name="Crane L1-24",
             setups=[
                 Setup(
                     id="s001",
@@ -325,9 +325,35 @@ projectList = [
             ]
         ),
         TransportResourceAAS(
+            id="04229d8896464647a7c2c4e11b45ad7f",
+            type="Kran",
+            name="Robot KR 120 R3900",
+            setups=[
+                Setup(
+                    id="s001",
+                    type="Transport",
+                    name="Schwerlasthaken",
+                    capabilities=[
+                        PositioningCapability(
+                            id="c002",
+                            name="Positionieren",
+                            description="Poitionieren schwerer Güter",
+                            parameters=[
+                                Weight(dimensionName="Traglast", dimensionUnit="t", valueRange=[0, 70]),
+                                PerfVolume(dimensionName="Verfahrvolumen", dimensionUnit="t/h", value=2),
+                                Velocity(dimensionName="Verfahrgeschwindigkeit", dimensionUnit="km/h", value=2),
+                                Height(dimensionName="Verfahrhöhe", dimensionUnit="m", valueRange=[0, 15]),
+                                Volume(dimensionName="Tragvolumen", dimensionUnit="m^3", valueRange=[0, 30])
+                                ]
+                            )
+                        ]
+                     ),
+            ]
+        ),
+        TransportResourceAAS(
             id="34a375c631364af4bd4e72d5d365d3dc",
             type="LKW",
-            name="MAN 20t",
+            name="Truck MAN 20t",
             setups=[
                 Setup(
                 id="s002",
@@ -353,7 +379,7 @@ projectList = [
                 WorkerResourceAAS(
                     id="1fa7facc81a344078fdb0444102c777e",
                     type="Worker",
-                    name="Hans Dieter",
+                    name="Worker_001",
                     setups=[
                         Setup(
                             id="s003",
@@ -387,7 +413,7 @@ projectList = [
                 WorkerResourceAAS(
                     id="06b726ee3551415ca8e8aa749472b62f",
                     type="Worker",
-                    name="Hans Uwe",
+                    name="Worker_002",
                     setups=[
                         Setup(
                             id="s004",
@@ -417,7 +443,7 @@ projectList = [
                 WorkerResourceAAS(
                     id="dce9b3c20e6549e4a826c2a43da9ff9e",
                     type="Worker",
-                    name="Hans Wurst",
+                    name="Worker_003",
                     setups=[
                         Setup(
                             id="s005",
@@ -439,7 +465,7 @@ projectList = [
                 WorkerResourceAAS(
                     id="2990c20b53f34f0391da3204a9824289",
                     type="Worker",
-                    name="Hans Wurst",
+                    name="Worker_004",
                     setups=[
                         Setup(
                             id="s006",
@@ -469,7 +495,7 @@ projectList = [
                 WorkerResourceAAS(
                     id="0850803e321e4b2d8eb4290bda18fa01",
                     type="Worker",
-                    name="Hans Wurst",
+                    name="Worker_005",
                     setups=[
                         Setup(
                             id="s008",

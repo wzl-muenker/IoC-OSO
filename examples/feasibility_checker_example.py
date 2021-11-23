@@ -168,7 +168,7 @@ def get_feasibility_tree_graph(model, building_element_index):
 
     #Resources nodes
     for resource in model.resource_list:
-        G.add_node(resource.id, name=resource.name, color='lightskyblue', label=resource.id, subset=8)
+        G.add_node(resource.id, name=resource.name, color='lightskyblue', label=resource.name, subset=8)
 
         for setup in resource.setups:
             G.add_node((resource.id + "/" + setup.name), name=setup.name, color='lightskyblue', label='/' + setup.name, subset=7)
@@ -227,7 +227,7 @@ model.building_element_list[1].reference_process.activities[2].set_completed()
 model.building_element_list[1].reference_process.activities[3].set_completed()
 
 print("\n get possible resources...")
-get_feasibility_tree_graph(model, building_element_index=1)
+get_feasibility_tree_graph(model, building_element_index=2)
 
 print('DONE')
 #get_Resources_to_Activity(model, 2, 3)
